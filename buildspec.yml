@@ -1,0 +1,10 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      java: corretto17
+      nodejs: 18 # Add Node.js version if needed
+    commands:
+      - echo Installing dependencies...
+      - mvn install
+      - npm install # Ensure Node.js dependencies are installed if needed
